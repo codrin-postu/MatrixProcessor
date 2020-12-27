@@ -6,23 +6,75 @@ public class Main {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-       NumMatrix firstMatrix = initializeMatrix();
-       NumMatrix secondMatrix = initializeMatrix();
-       NumMatrix sumMatrix = firstMatrix.addMatrix(secondMatrix);
-
-       if (sumMatrix != null) {
-           sumMatrix.print();
-       }
+        mainMenu();
     }
 
-    public static NumMatrix initializeMatrix() {
+    private static void mainMenu() {
+        outputMenu();
+        int option = getMenuChoice();
+
+        NumMatrix matrix1;
+        NumMatrix matrix2;
+        double constant;
+
+        switch (option) {
+            case 0:
+                System.exit(0);
+            case 1:
+                matrix1 = readMatrix();
+                matrix2 = readMatrix();
+                NumMatrix sumMatrix = matrix1.addMatrix(matrix2);
+                System.out.println("The result is:");
+                sumMatrix.print();
+                break;
+            case 2:
+                matrix1 = readMatrix();
+                constant = readConstant();
+                matrix1.multiplyMatrix(constant);
+                System.out.println("The result is:");
+                matrix1.print();
+                break;
+            case 3:
+                matrix1 = readMatrix();
+                matrix2 = readMatrix();
+                NumMatrix mulMatrix = matrix1.multiplyMatrix(matrix2);
+                System.out.println("The result is:");
+                mulMatrix.print();
+        }
+        mainMenu();
+    }
+
+    private static double readConstant() {
+        System.out.print("Enter constant: ");
+        return scanner.nextDouble();
+    }
+
+    private static int getMenuChoice() {
+        System.out.print("You choice: ");
+        return scanner.nextInt();
+    }
+
+    private static void outputMenu() {
+        System.out.println(
+                "1. Add matrices\n" +
+                        "2. Multiply matrix by a constant\n" +
+                        "3. Multiply matrices\n" +
+                        "0. Exit"
+        );
+    }
+
+    public static NumMatrix readMatrix() {
+        System.out.print("Enter size of matrix: ");
         int rows, columns;
         rows = scanner.nextInt();
         columns = scanner.nextInt();
+
         NumMatrix matrix = new NumMatrix(rows, columns);
+
+        System.out.println("Enter matrix:");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                matrix.addValue(scanner.nextInt(), i, j);
+                matrix.addValue(scanner.nextDouble(), i, j);
             }
         }
         return matrix;
