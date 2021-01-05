@@ -86,7 +86,7 @@ public class NumMatrix {
     public void print() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                System.out.print(getValue(i, j) + " ");
+                System.out.print(String.format("%.2f", getValue(i, j)) + " ");
             }
             System.out.print("\n");
         }
@@ -135,16 +135,12 @@ public class NumMatrix {
     private void getCofactor(NumMatrix temp, int p, int q) {
         int i = 0, j = 0;
 
-        for (int row = 0; row < this.getRows(); row++)
-        {
-            for (int col = 0; col < this.getColumns(); col++)
-            {
-                if (row != p && col != q)
-                {
+        for (int row = 0; row < this.getRows(); row++) {
+            for (int col = 0; col < this.getColumns(); col++) {
+                if (row != p && col != q) {
                     temp.addValue(this.getValue(row, col), i, j++);
 
-                    if (j == this.getRows() - 1)
-                    {
+                    if (j == this.getRows() - 1) {
                         j = 0;
                         i++;
                     }
@@ -153,7 +149,7 @@ public class NumMatrix {
         }
     }
 
-    public double matrixDeterminant() {
+    public double getDeterminant() {
 
         double determinant = 0;
 
@@ -165,14 +161,13 @@ public class NumMatrix {
 
         int sign = 1;
 
-        for (int f = 0; f < this.getRows(); f++)
-        {
+        for (int f = 0; f < this.getRows(); f++) {
             // Getting Cofactor of mat[0][f]
             getCofactor(temp, 0, f);
             temp.setRows(this.getRows() - 1);
             temp.setColumns(this.getColumns() - 1);
             determinant += sign * this.getValue(0, f)
-                    * temp.matrixDeterminant();
+                    * temp.getDeterminant();
 
             sign = -sign;
         }
@@ -180,6 +175,45 @@ public class NumMatrix {
         return determinant;
     }
 
+    public NumMatrix getAdjointMatrix() {
+
+        NumMatrix temp = new NumMatrix(this.getRows(), this.getColumns());
+        NumMatrix cofactorMatrix = new NumMatrix(this.getRows(), this.getColumns());
+
+        int sign = 1;
+
+        temp.setRows(this.getRows() - 1);
+        temp.setColumns(this.getColumns() - 1);
+
+        for (int i = 0; i < this.getRows(); i++) {
+            for (int j = 0; j < this.getColumns(); j++) {
+                sign = ((i + j) % 2 == 0) ? 1 : -1;
+                getCofactor(temp, i, j);
+                cofactorMatrix.addValue(sign * temp.getDeterminant(), i, j);
+
+                sign = -sign;
+            }
+        }
+
+        return cofactorMatrix;
+    }
+
+    public NumMatrix getInverse() {
+        double det = this.getDeterminant();
+
+        //If 0 => doesn't have an inverse
+        if (det == 0) {
+            return null;
+        }
+        det = 1 / det;
+
+        NumMatrix inverse = this.getAdjointMatrix();
+        inverse = inverse.diagonalTranspose();
+
+        inverse.multiplyMatrix(det);
+
+        return inverse;
+    }
 }
 
 

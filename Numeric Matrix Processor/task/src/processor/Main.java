@@ -55,8 +55,23 @@ public class Main {
                     break;
                 }
                 System.out.println("The result is:");
-                System.out.println(matrix1.matrixDeterminant());
+                System.out.println(matrix1.getDeterminant());
                 break;
+            case 6:
+                matrix1 = readMatrix();
+                if (matrix1.getColumns() != matrix1.getRows()) {
+                    System.out.println("This matrix doesn't have an inverse.");
+                    break;
+                }
+
+                NumMatrix inverseMatrix = matrix1.getInverse();
+
+                if (inverseMatrix == null) {
+                    System.out.println("This matrix doesn't have an inverse.");
+                } else {
+                    System.out.println("The result is:");
+                    inverseMatrix.print();
+                }
         }
         mainMenu();
     }
@@ -91,6 +106,7 @@ public class Main {
                         "3. Multiply matrices\n" +
                         "4. Transpose matrix\n" +
                         "5. Calculate a determinant\n" +
+                        "6. Inverse matrix\n" +
                         "0. Exit"
         );
     }
