@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b60d141-cf01-4bed-9b0b-95e5cc1a8972" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,15 +21,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/Addition/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/Addition/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/Determined!/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/Determined!/task-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/Matrix by matrix multiplication/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/Matrix by matrix multiplication/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/Multiplication by number/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/Multiplication by number/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/Transpose/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/Transpose/task-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/lesson-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/classes/java/main/processor/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/classes/java/main/processor/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/classes/java/main/processor/NumMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/classes/java/main/processor/NumMatrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/classes/java/test/NumericMatrixProcessorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/classes/java/test/NumericMatrixProcessorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/classes/java/test/TestClue.class" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/classes/java/test/TestClue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/reports/tests/test/classes/NumericMatrixProcessorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/reports/tests/test/classes/NumericMatrixProcessorTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/reports/tests/test/packages/default-package.html" afterDir="false" />
@@ -31,7 +40,6 @@
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/out/production/classes/processor/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/out/production/classes/processor/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/out/production/classes/processor/NumMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/out/production/classes/processor/NumMatrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Numeric Matrix Processor/task/src/processor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Numeric Matrix Processor/task/src/processor/Main.java" afterDir="false" />
@@ -70,6 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
@@ -103,7 +112,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609100496862</updated>
-      <workItem from="1609100500258" duration="5050000" />
+      <workItem from="1609100500258" duration="6359000" />
+      <workItem from="1609569569155" duration="4406000" />
+      <workItem from="1609529414541" duration="2505000" />
     </task>
     <servers />
   </component>
@@ -111,26 +122,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1609102305262">
+    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1609819346644">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.1728.1112@0.0.1728.1112" timestamp="1609102305262" />
-    <state width="1685" height="305" key="GridCell.Tab.0.bottom" timestamp="1609106442956">
+    <state x="670" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.1728.1112@0.0.1728.1112" timestamp="1609819346644" />
+    <state width="1670" height="302" key="GridCell.Tab.0.bottom" timestamp="1609819872110">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="305" key="GridCell.Tab.0.bottom/0.0.1728.1112@0.0.1728.1112" timestamp="1609106442956" />
-    <state width="1685" height="305" key="GridCell.Tab.0.center" timestamp="1609106442955">
+    <state width="1670" height="302" key="GridCell.Tab.0.bottom/0.0.1728.1112@0.0.1728.1112" timestamp="1609819872110" />
+    <state width="1670" height="302" key="GridCell.Tab.0.center" timestamp="1609819872110">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="305" key="GridCell.Tab.0.center/0.0.1728.1112@0.0.1728.1112" timestamp="1609106442955" />
-    <state width="1685" height="305" key="GridCell.Tab.0.left" timestamp="1609106442955">
+    <state width="1670" height="302" key="GridCell.Tab.0.center/0.0.1728.1112@0.0.1728.1112" timestamp="1609819872110" />
+    <state width="1670" height="302" key="GridCell.Tab.0.left" timestamp="1609819872109">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="305" key="GridCell.Tab.0.left/0.0.1728.1112@0.0.1728.1112" timestamp="1609106442955" />
-    <state width="1685" height="305" key="GridCell.Tab.0.right" timestamp="1609106442956">
+    <state width="1670" height="302" key="GridCell.Tab.0.left/0.0.1728.1112@0.0.1728.1112" timestamp="1609819872109" />
+    <state width="1670" height="302" key="GridCell.Tab.0.right" timestamp="1609819872110">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>
-    <state width="1685" height="305" key="GridCell.Tab.0.right/0.0.1728.1112@0.0.1728.1112" timestamp="1609106442956" />
+    <state width="1670" height="302" key="GridCell.Tab.0.right/0.0.1728.1112@0.0.1728.1112" timestamp="1609819872110" />
+    <state x="561" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1609529422993">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state x="561" y="380" key="com.intellij.ide.util.TipDialog/0.0.1728.1112@0.0.1728.1112" timestamp="1609529422993" />
+    <state x="595" y="336" key="extract.method.dialog" timestamp="1609581490845">
+      <screen x="0" y="0" width="1728" height="1112" />
+    </state>
+    <state x="595" y="336" key="extract.method.dialog/0.0.1728.1112@0.0.1728.1112" timestamp="1609581490845" />
     <state x="527" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1609102041888">
       <screen x="0" y="0" width="1728" height="1112" />
     </state>

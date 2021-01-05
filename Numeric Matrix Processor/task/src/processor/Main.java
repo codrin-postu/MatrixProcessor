@@ -40,8 +40,38 @@ public class Main {
                 NumMatrix mulMatrix = matrix1.multiplyMatrix(matrix2);
                 System.out.println("The result is:");
                 mulMatrix.print();
+                break;
+            case 4:
+                int transposeOption = transposeOption();
+                matrix1 = readMatrix();
+                NumMatrix transposedMatrix = transposeMatrix(matrix1, transposeOption);
+                System.out.println("The result is:");
+                transposedMatrix.print();
+                break;
+            case 5:
+                matrix1 = readMatrix();
+                if (matrix1.getColumns() != matrix1.getRows()) {
+                    System.out.println("ERROR! Invalid matrix.");
+                    break;
+                }
+                System.out.println("The result is:");
+                System.out.println(matrix1.matrixDeterminant());
+                break;
         }
         mainMenu();
+    }
+
+    //TODO: Change to enum
+    private static int transposeOption() {
+        System.out.print(
+                "1. Main diagonal\n" +
+                        "2. Side diagonal\n" +
+                        "3. Vertical line\n" +
+                        "4. Horizontal line\n" +
+                        "0. Exit\n" +
+                        "Your choice: "
+        );
+        return scanner.nextInt();
     }
 
     private static double readConstant() {
@@ -50,7 +80,7 @@ public class Main {
     }
 
     private static int getMenuChoice() {
-        System.out.print("You choice: ");
+        System.out.print("Your choice: ");
         return scanner.nextInt();
     }
 
@@ -59,6 +89,8 @@ public class Main {
                 "1. Add matrices\n" +
                         "2. Multiply matrix by a constant\n" +
                         "3. Multiply matrices\n" +
+                        "4. Transpose matrix\n" +
+                        "5. Calculate a determinant\n" +
                         "0. Exit"
         );
     }
@@ -78,5 +110,21 @@ public class Main {
             }
         }
         return matrix;
+    }
+
+    public static NumMatrix transposeMatrix(NumMatrix matrix, int transposeOption) {
+        switch (transposeOption) {
+            case 1:
+                return matrix.diagonalTranspose();
+            case 2:
+                return matrix.sideTranspose();
+            case 3:
+                return matrix.verticalTranspose();
+            case 4:
+                return matrix.horizontalTranspose();
+            default:
+                System.out.println("ERROR: Incorrect transpose choice!");
+                return null;
+        }
     }
 }
